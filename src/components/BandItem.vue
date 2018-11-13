@@ -1,7 +1,7 @@
 <template>
     <div>
         <li @click="toggle">
-            {{band.name}}
+            {{band.id}} {{band.name}}
             <p v-show="open">
                 {{band.songs | join}}
                 <input type="text" placeholder="Add more songs" @click.stop @keyup.enter="addSong" v-model='newSong'/>
